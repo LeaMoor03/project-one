@@ -38,11 +38,13 @@ a {
     padding: 15px 30px;
 }
 
-.projects p {
+ p {
     font-family: "poppins";
     font-weight: 400;
 }
-
+.projects h2 {
+    font-size: 64px;
+}
 .introduction {
     background: #F9F7FE;
     text-align: center;
