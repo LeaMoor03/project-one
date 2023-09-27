@@ -12,7 +12,7 @@ h1, h2, h3, h4 {
     font-family: "playfair";
 }
 
-p {
+.introduction p {
     font-size: 36px;
     font-family: "poppins";
     font-weight: 700;
@@ -36,6 +36,11 @@ a {
     color: white;
     background: #6C63FF;
     padding: 15px 30px;
+}
+
+.projects p {
+    font-family: "poppins";
+    font-weight: 400;
 }
 
 .introduction {
