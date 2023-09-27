@@ -7,20 +7,27 @@
     font-family: "poppins";
     src: url(fonts/Poppins-Medium.ttf);
 }
-
+:root {
+    --main-color:#6C63FF;
+    --main-background-color:#F9F7FE;
+    --main-font: "playfair";
+    --text-font: "poppins";
+    --small-text-weight:  400;
+    --big-text-weight: 700;
+}
 h1, h2, h3, h4 {
-    font-family: "playfair";
+    font-family: var(--main-font);
 }
 
 .introduction p {
     font-size: 36px;
-    font-family: "poppins";
-    font-weight: 700;
+    font-family: var(--text-font);
+    font-weight: var(--big-text-weight);
 }
 
 h1 {
     font-size: 96px;
-    font-weight: 700;
+    font-weight: var(--big-text-weight);
 }
 
 h2 {
@@ -29,24 +36,72 @@ h2 {
     font-weight: 600;
 }
 
-a {
-    font-family: "poppins";
-    font-weight: 400;
+.introduction a {
+    font-family: var(--text-font);
+    font-weight: var(--small-text-weight);
     font-size: 18px;
     color: white;
-    background: #6C63FF;
-    padding: 15px 30px;
+    background: var(--main-color);
+    padding: 15px 20px;
 }
 
  p {
-    font-family: "poppins";
-    font-weight: 400;
+    font-family: var(--text-font);
+    font-weight: var(--small-text-weight);
 }
-.projects h2 {
+
+img {
+    height: 636px;
+    max-width: 100%;
+}
+
+.container h2 {
     font-size: 64px;
+    font-weight: var(--big-text-weight);
 }
+
+.container p {
+    color: #6C757D;
+    line-height: 30px;
+    font-family:var(--text-font);
+    font-weight: var(--small-text-weight);
+}
+
+.container a {
+    color: var(--main-color);
+    font-family: var(--text-font);
+    font-size: 18px;
+    border: 2px solid var(--main-color);
+    padding: 15px 20px ;
+}
+
+.description {
+    padding: 120px 20px;
+}
+
+a:hover {
+    color: black;
+}
+
 .introduction {
     background: #F9F7FE;
     text-align: center;
     padding: 160px 20px;
+}
+
+@media (max-width: 900px) {
+
+    .description {
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    .container h2 {
+        font-size: 44px;
+        text-align: center;
+    }
 }
