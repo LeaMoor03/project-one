@@ -1,0 +1,18 @@
+
+p {
+    font-size: 36px;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.introduction {
+    background: #F9F7FE;
+    text-align: center;
+    padding: 160px 20px;
+}
